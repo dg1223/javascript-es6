@@ -16,10 +16,19 @@ const people = [
 // for loop
 let age = 0;
 
+// for (let i = 0; i < people.length; i++) {
+//   age += people[i].age;
+// }
+
 for (let object of people) {
-  age += people[object].age;
+  age += object.age;
 }
 console.log(age);
 
 // reduce
 const initialValue = 0;
+const ageReduced = people.reduce(
+  (accumulator, currentValue) => accumulator + currentValue.age,
+  initialValue
+);
+console.log(ageReduced);
