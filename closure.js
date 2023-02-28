@@ -1,6 +1,6 @@
-// closure gives you scope to outer fucntion's scope
+// closure gives you scope to outer function's scope
 // from the inner function
-// closures are created every time a funciton
+// closures are created every time a function
 // is created
 
 function kitchen() {
